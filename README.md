@@ -1,0 +1,1 @@
+A simple project aiming to recreate a sample admin dashboard example as close as possible.
