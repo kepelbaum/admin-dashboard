@@ -35,6 +35,8 @@ body {
 .top {
     grid-area: 1 / 2 / 2 / 3;
     background-color: white;
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr 2fr;
 }
 
 .bot {
@@ -57,4 +59,96 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.top svg {
+    max-width: 50px;
+    max-height: 50px; 
+    min-height: 50px;
+    min-width: 50px;
+}
+
+input {
+    width: 40vw;
+    height: 30px;
+    background-color: lightgray;
+    border-radius: 15px;
+    font-size: 20px;
+    border: 1px solid gray;
+    min-width: 400px;
+}
+
+.search {
+    grid-area: 1 / 1 / 2 / 3;
+    display: flex;
+    align-items: center;
+    margin: 40px;
+    gap: 20px;
+}
+.topright {
+    grid-area: 1 / 3 / 2 / 4;
+    display: flex;
+    gap: 50px;
+    margin: 40px;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 300px;
+}
+
+.topcat {
+    border: 2px solid orange;
+    border-radius: 20px;
+    min-height: 75px;
+    min-width: 75px;
+}
+
+.bottomleft .bigcat {
+    border: 3px solid orange;
+    border-radius: 30px;
+    min-height: 125px;
+    min-width: 125px;
+}
+
+.bottomleft {
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-left: 80px;
+}
+.buttons {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.hithere {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.big {
+    font-size: 25px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: right;
+    margin-right: 100px;
+    margin-bottom: 40px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    height: 60px;
+    width: 150px;
+    border-radius: 40px;
+    font-size: 20px;
 }
