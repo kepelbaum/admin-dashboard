@@ -39,6 +39,10 @@ body {
     grid-template: 1fr 1fr / 2fr 1fr 2fr;
 }
 
+.tright > p, .bright > p, .left > p {
+    font-size: 25px;
+}
+
 .bot {
     grid-area: 2 / 2 / 2 / 3;
     background-color: lightgrey;
@@ -46,6 +50,34 @@ body {
     grid-template: 1fr 1fr / 2fr 1fr;
     font-size: 20px;
     font-weight: bold;
+}
+
+.announcebox {
+    width: 400px;
+    height: 380px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.announcebox p {
+    font-size: 15px;
+    font-weight: normal;
+    color: gray;
+}
+
+.announcebox h3 {
+    font-size: 18px;
+    margin-bottom: -30px;
+    margin-top: 30px;
+}
+
+.border {
+    height: 2px;
+    width: 90%;
+    background-color: gray;
+    align-self: center;
 }
 
 .project {
